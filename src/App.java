@@ -1,5 +1,10 @@
+import java.util.Scanner;
 public class App {
+    
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Scanner leer = new Scanner(System.in);
+        Validar ordenar = new Validar ();
+        int tamanio = ordenar.leerEnteroValido(leer,false);
+        System.out.println(tamanio);
     }
 }
